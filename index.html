@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ABOUT KKEBI</title>
+	
+	<style>
+		@font-face { font-family: 'Binggrae-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+		body{margin:0;}
+		section {height: 600px; position: relative;}
+		img{  position: absolute; }
+		h1{margin-top: 0; left: 400px; top: 100px; font-weight: bold; color: white; font-family: 'Binggrae-Bold'}
+		h2{left: 400px; top: 100px; text-align: center; font-family: 'Binggrae-Bold'}
+		
+		
+		@keyframes le{ from{left: 0px;} to{left: 430px;} }
+		@keyframes le2{ from{left: 800px; top: 0px;} to{left: 400px;top: -150px;} }
+		@keyframes ri{ from{right: 0px;} to{right: 400px;} }
+		@keyframes tt{
+			from{top:100px; opacity: 0} to{top:50px; opacity: 1} } 
+		
+
+		#monitor{position: fixed; background: black; width:100px; height: 30px; right:0px; top:0px; color: white;}
+
+
+		
+		.textbox{width: 600px; font-size: 1.2em; line-height: 2.0; color:white; background: black; position: absolute;opacity: 0.2; padding:20px; text-align: left;}
+	
+		
+		#t2{ left:300px; top:-300px; }
+		#t3{ left:400px; top:100px; }
+		
+
+		#aa{ background: url(2.jpg); background-size: cover; background-attachment: fixed; }
+		#bb{ background: url(clean.gif); background-size: cover;
+				background-attachment: fixed;}
+		#cc{ background: url(hunt9.gif); background-size: cover; background-attachment: fixed; height: 500px;}
+		
+
+		.bg22{width: 100%;}
+
+		#abc{ background: url(bg.png); background-attachment: fixed; background-size: cover; height: 1080px}
+	</style>
+</head>
+<body>
+	 
+	<section id="abc" class="bg22">
+	<img src="3.gif" id="f1" style="left: 83.5%; top: 60px;">
+	</section>
+	
+	<div id="monitor"></div>
+	<section class="white" id="aa">
+		
+		
+	</section>
+	<section id="aa">
+		<img src="cat2.jpg" id="f2" style="margin-top: -230px; z-index: 998; width:600px; margin-left: 100px">
+		<img src="cat3.jpg" id="g2" style="margin-left: 300px;margin-top:400px; width: 500px; z-index: 1000">
+		<div class="textbox" id="t2" style="top: -30%; z-index: 999"><h2 style="text-align: left;">깨비란?</h2><p>지수네 집에 같이살아가는 고양이로써 나이는 7살, <br>뚱뚱하지만 사냥할때만은 날렵한 턱시도 고양이다.</p></div>
+	</section>
+
+
+	<section id="bb">
+		<img src="clean2.gif" id="f3" style="z-index: 9999; margin-top: 100px;">
+		<div class="textbox" id="t3" style="margin-top: 260px; left: 220px;">깨비는 하루에 한 번 자신의 몸을 깨끗히 청소한다. <br>손을 털위에 슬쩍 올리면 같이 청소해준다.</div>
+	</section>
+
+	
+	<section id="cc" style="height: 1000px;">
+		<h2 style="font-size: 80px; color: white; margin-top: 0px;"><br>사냥시간</h2>
+		
+	</section>
+
+	
+	<script type="text/javascript">
+	window.onscroll = function(){
+		var t = document.documentElement.scrollTop + document.body.scrollTop;
+		monitor.innerHTML = t;
+
+
+		if(t > 800){
+			f2.style.animation = "le 1s forwards";
+			t2.style.animation = "tt 1s forwards";
+			g2.style.animation = "le2 1.3s forwards";
+		}else{
+			f2.style.animation = "";
+			t2.style.animation = "";
+			g2.style.animation = "";
+		}
+
+		if(t > 1800){
+			f3.style.animation = "ri 1.5s forwards";
+			t3.style.animation = "tt 3s forwards";
+		}else{
+			f3.style.animation = "";
+			t3.style.animation = "";
+		}
+
+		
+
+
+	}
+
+
+	</script>
+	<footer style="text-align: center">
+		copyright.Lee ju hyeon.all rights reserved.
+	</footer>
+</body>
+</html>
